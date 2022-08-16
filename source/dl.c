@@ -43,8 +43,6 @@ typedef struct dl_handle {
     SceUID reserved;
 } dl_handle;
 
-SceUID sceKernelCreateRWLock(const char *, SceUInt32, void *);
-SceUID sceKernelDeleteRWLock(SceUInt32);
 SceInt32 sceKernelLockWriteRWLock(SceUID, SceUInt32 *);
 SceInt32 sceKernelUnlockWriteRWLock(SceUID);
 SceInt32 sceKernelLockReadRWLock(SceUID, SceUInt32 *);
